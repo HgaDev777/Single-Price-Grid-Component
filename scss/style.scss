@@ -1,0 +1,52 @@
+//Variables 
+$fontstyle: 'Karla',
+sans-serif;
+$font-size: 16px;
+
+
+body {
+  font-family: $fontstyle;
+  font-size: $font-size;
+}
+
+.main {
+  width: 100%;
+
+}
+
+.main__card {
+  width: 50%;
+  margin: 5em auto;
+}
+
+.card__header {
+  color: hsl(179, 62%, 43%);
+}
+
+.card__promise {
+  color: hsl(71, 73%, 54%);
+}
+
+.card__p {
+  color: hsl(218, 22%, 67%);
+}
+
+.card__bt_left {
+  background: hsl(179, 62%, 43%);
+  color: hsl(204, 43%, 93%);
+}
+
+.card__button {
+  background: hsl(71, 73%, 54%);
+  color: hsl(204, 43%, 93%);
+}
+
+.card__bt_right {
+  background: rgb(57, 178, 176);
+  color: hsl(204, 43%, 93%);
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+}
