@@ -17,36 +17,45 @@ body {
 .main__card {
   width: 50%;
   margin: 5em auto;
+
+  // Top Section of Card
+  .card__top {
+
+    .card__header {
+      color: hsl(179, 62%, 43%);
+    }
+
+    .card__promise {
+      color: hsl(71, 73%, 54%);
+    }
+
+    .card__p {
+      color: hsl(218, 22%, 67%);
+    }
+  }
 }
 
-.card__header {
-  color: hsl(179, 62%, 43%);
-}
 
-.card__promise {
-  color: hsl(71, 73%, 54%);
-}
-
-.card__p {
-  color: hsl(218, 22%, 67%);
-}
-
+// Card bottom left section
 .card__bt_left {
   background: hsl(179, 62%, 43%);
   color: hsl(204, 43%, 93%);
+
+  // Card button
+  .card__button {
+    background: hsl(71, 73%, 54%);
+    color: hsl(204, 43%, 93%);
+  }
 }
 
-.card__button {
-  background: hsl(71, 73%, 54%);
-  color: hsl(204, 43%, 93%);
-}
 
+// Card bottom right section
 .card__bt_right {
   background: rgb(57, 178, 176);
   color: hsl(204, 43%, 93%);
 }
 
-footer {
+.footer {
   width: 100%;
   margin: 0 auto;
 }
