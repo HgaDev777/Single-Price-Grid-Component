@@ -1,58 +1,75 @@
-//Variables 
-$fontstyle: 'Karla',
-sans-serif;
+//Variables
+$fontstyle: "Karla", sans-serif;
 $font-size: 16px;
-
 
 body {
   font-family: $fontstyle;
   font-size: $font-size;
+  background-color: hsl(204, 43%, 93%);
+  box-sizing: border-box;
 }
 
 .main {
-  width: 100%;
+  box-sizing: border-box;
 
-}
+  .main__card {
+    width: 50%;
+    margin: 5em auto;
+    display: grid;
+    box-shadow: 0 10px 20px 0 (#0c0c0c3b);
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 2fr);
 
-.main__card {
-  width: 50%;
-  margin: 5em auto;
-
-  // Top Section of Card
-  .card__top {
-
-    .card__header {
-      color: hsl(179, 62%, 43%);
+    .wrapper {
+      padding: 2em;
     }
+    // Top Section of Card
+    .card__top {
+      background-color: white;
+      grid-column: 1 / 3;
+      grid-row: 1 / 1;
 
-    .card__promise {
-      color: hsl(71, 73%, 54%);
-    }
+      .card__header {
+        color: hsl(179, 62%, 43%);
+        line-height: 1.5;
+      }
 
-    .card__p {
-      color: hsl(218, 22%, 67%);
+      .card__promise {
+        color: hsl(71, 73%, 54%);
+        font-weight: 700;
+      }
+
+      .card__p {
+        color: hsl(218, 22%, 67%);
+        width: 90%;
+        line-height: 1.5;
+      }
     }
   }
-}
 
+  // Card bottom left section
+  .card__bt_left {
+    background: hsl(179, 62%, 43%);
+    color: hsl(204, 43%, 93%);
 
-// Card bottom left section
-.card__bt_left {
-  background: hsl(179, 62%, 43%);
-  color: hsl(204, 43%, 93%);
+    .bt_left__ header {
+      font-weight: 700;
+    }
 
-  // Card button
-  .card__button {
-    background: hsl(71, 73%, 54%);
+    // Card button
+    .card__button {
+      background: hsl(71, 73%, 54%);
+      color: hsl(204, 43%, 93%);
+    }
+  }
+
+  // Card bottom right section
+  .card__bt_right {
+    background: #39b2b0e0;
     color: hsl(204, 43%, 93%);
   }
-}
-
-
-// Card bottom right section
-.card__bt_right {
-  background: rgb(57, 178, 176);
-  color: hsl(204, 43%, 93%);
 }
 
 .footer {
