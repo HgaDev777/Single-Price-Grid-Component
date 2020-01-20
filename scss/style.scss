@@ -2,6 +2,11 @@
 $fontstyle: "Karla", sans-serif;
 $font-size: 16px;
 
+html {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 body {
   font-family: $fontstyle;
   font-size: $font-size;
@@ -17,14 +22,14 @@ body {
     margin: 5em auto;
     display: grid;
     box-shadow: 0 10px 20px 0 (#0c0c0c3b);
-    border-radius: 3px;
-    display: grid;
+    border-radius: 10px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 2fr);
 
     .wrapper {
       padding: 2em;
     }
+
     // Top Section of Card
     .card__top {
       background-color: white;
@@ -53,16 +58,29 @@ body {
   .card__bt_left {
     background: hsl(179, 62%, 43%);
     color: hsl(204, 43%, 93%);
+  }
 
-    .bt_left__ header {
-      font-weight: 700;
-    }
+  .bt_left__header {
+    font-weight: 700;
+  }
 
-    // Card button
-    .card__button {
-      background: hsl(71, 73%, 54%);
-      color: hsl(204, 43%, 93%);
-    }
+  .price {
+    font-weight: 300;
+  }
+  .price_bold {
+    font-weight: 700;
+    font-size: 2em;
+  }
+
+  // Card button
+  .card__button {
+    background: hsl(71, 73%, 54%);
+    color: hsl(204, 43%, 93%);
+    width: 83%;
+    padding: 1.5em;
+    border-radius: 5px;
+    font-weight: 700;
+    font-family: $fontstyle;
   }
 
   // Card bottom right section
