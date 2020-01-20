@@ -77,10 +77,13 @@ body {
     background: hsl(71, 73%, 54%);
     color: hsl(204, 43%, 93%);
     width: 83%;
-    padding: 1.5em;
+    padding: 0.9em;
     border-radius: 5px;
+    font-size: 1em;
     font-weight: 700;
     font-family: $fontstyle;
+    color: whitesmoke;
+    box-shadow: 0 10px 20px 0 (#0c0c0c3b);
   }
 
   // Card bottom right section
