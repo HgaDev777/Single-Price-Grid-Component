@@ -1,5 +1,6 @@
 //Variables
-$fontstyle: "Karla", sans-serif;
+$fontstyle: "Karla",
+sans-serif;
 $font-size: 16px;
 
 html {
@@ -24,10 +25,10 @@ body {
     box-shadow: 0 10px 20px 0 (#0c0c0c3b);
     border-radius: 10px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 2fr);
+    grid-template-rows: repeat(1, 2fr);
 
     .wrapper {
-      padding: 2em;
+      padding: 1.5em 2.5em;
     }
 
     // Top Section of Card
@@ -35,6 +36,9 @@ body {
       background-color: white;
       grid-column: 1 / 3;
       grid-row: 1 / 1;
+      font-size: $font-size;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
 
       .card__header {
         color: hsl(179, 62%, 43%);
@@ -58,18 +62,25 @@ body {
   .card__bt_left {
     background: hsl(179, 62%, 43%);
     color: hsl(204, 43%, 93%);
+    padding-top: 1.5em;
+    border-bottom-left-radius: 8px;
   }
 
   .bt_left__header {
     font-weight: 700;
+    font-size: 1.1em;
   }
 
   .price {
     font-weight: 300;
+    color: #83edf9a3;
   }
+
   .price_bold {
     font-weight: 700;
     font-size: 2em;
+    margin-right: 0.4em;
+    color: hsl(204, 43%, 93%);
   }
 
   // Card button
@@ -79,10 +90,12 @@ body {
     width: 83%;
     padding: 0.9em;
     border-radius: 5px;
+    border: none;
     font-size: 1em;
     font-weight: 700;
     font-family: $fontstyle;
     color: whitesmoke;
+    margin-top: 1em;
     box-shadow: 0 10px 20px 0 (#0c0c0c3b);
   }
 
@@ -90,6 +103,28 @@ body {
   .card__bt_right {
     background: #39b2b0e0;
     color: hsl(204, 43%, 93%);
+    padding-top: 1.5em;
+    border-bottom-right-radius: 8px;
+
+    // header
+    .bt_right__header {
+      font-weight: 700;
+      font-size: 1.1em;
+      color: hsl(204, 43%, 93%);
+    }
+
+    .bt_right__list {
+      list-style-type: none;
+      padding: 0;
+      line-height: 1.4;
+      color: hsl(204, 43%, 93%);
+      font-size: $font-size;
+
+      .list_item {
+        font-weight: 300;
+
+      }
+    }
   }
 }
 
