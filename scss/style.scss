@@ -138,6 +138,12 @@ body {
   background: #000;
   cursor: pointer;
   color: hsl(71, 73%, 54%);
+
+}
+
+.card__button:active,
+:focus {
+  outline: none;
 }
 
 // Card bottom right section
